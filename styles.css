@@ -1,0 +1,371 @@
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    color: #444349;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS Reset*/
+
+/* =============================
+
+    GENERAL STYLES
+
+=============================*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Single-direction margin declaration to establish vertical rhythm. */
+  h1,h2,h3,
+  ul,ol,
+  p,
+  img {
+      margin-bottom: 1.5rem;
+  }
+  
+  body {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+  }
+  
+  .locations,
+  .program,
+  .gifts,
+  .faq,
+  .contact {
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #bd806e;
+  }
+  
+  a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+  }
+
+/* HEADER */
+
+body{
+    font-family: 'Libre Baskerville', serif;
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+}
+
+.coverphoto {
+    display: table;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: 100% center;
+
+    
+ }
+
+.coverphoto {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+ 
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.25rem;
+    color: hsla(0,0%,100%,.9);
+    background: hsla(100,0%,0%,.5);
+}
+
+
+.hero-text h1 {
+    font-family: 'Great Vibes';
+    font-size: 5.15rem;
+    color: #d2ba87;
+    line-height: 6rem;
+    margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+  }
+
+.married {
+    font-family: 'Libre Baskerville';
+    font-size: 1rem;
+    letter-spacing: .30rem;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+   
+    
+}
+
+.married::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: 1rem auto;
+  }
+
+h1 {
+    padding-bottom: 2rem;
+}
+.date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
+    font-family: 'Libre';
+}
+  
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 2rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+/* HEADER */
+
+/* LOCATIONS */
+
+#Location{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.location{
+    display: inline-block;
+    text-align: center;
+    padding: 2% 8% 3% 8%;
+}
+
+.location div {
+    font-family: 'Mulish';
+    font-size: 1.2rem;
+}
+
+#Location h3 {
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#Location h1{
+    font-family: 'Great Vibes';
+    font-size: 4rem;
+    padding-top: 1%;
+}
+
+.location img{
+    width: 50%;
+    text-align: center;
+    padding: 10% 0 10%;
+} 
+
+
+/* Program section */
+
+#Program {
+    background-color:hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    text-align: left;
+    padding: 3rem 30% 2rem 30%;
+    line-height: .5rem;
+    width: 100%;
+    
+}
+
+#Program h1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-family: 'Great Vibes';
+}
+
+#Program p
+{ 
+    font-style: italic;
+    padding: 2rem 0 1rem 0;
+}
+
+.timetable{
+    line-height: 1.5rem;
+    letter-spacing: 0.09rem;
+    font-family: 'Muli', sans-serif;
+    
+}
+
+/* Gifts section */
+
+#Gifts {
+    text-align: center;
+    font-style: 'Great Vibes';
+    padding-top: 2rem;
+}
+
+#Gifts img {
+    width: 10%;
+}
+
+/* =============================
+
+        FAQ STYLES
+
+=============================*/
+
+.faq {
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .faq h2 {
+    margin-top: 1rem; /* To even out top and bottom margins. */
+  }
+  
+  .faq p {
+    font-family: 'Muli', sans-serif;
+    text-align: left;
+  }
+  
+.question-group{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+}
+
+
+
+@media (max-width:768px) {
+  .question-group::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 100%;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+  }
+}
+  
+.question {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+  
+.answer {
+    margin-bottom: 1.5rem;
+}
+
+/* Contacts and footer section */
+
+/* =============================
+
+        FOOTER STYLES
+
+=============================*/
+
+
+  * footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: #606060;
+    color:#fff;
+    text-align: center;
+    display: table;
+    font-size: .875rem;
+    font-family: 'Muli', sans-serif;
+  }
+
+  
+  .footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer small {
+    line-height: 1.5;
+  }
