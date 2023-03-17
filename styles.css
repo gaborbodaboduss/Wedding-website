@@ -123,6 +123,26 @@ body{
     width: 100%;
  }
 
+/* @media (min-width: 1200px){
+
+    .coverphoto{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+ 
+@media (min-width: 478px) {
+
+    .coverphoto {
+        width: 100vw;
+        height: 100vh;
+    }
+ } */
+
+
+
+ 
 .hero-text{
     position: absolute;
     top: 50%;
@@ -187,6 +207,38 @@ h1 {
     margin: 0 .5rem;
 }
 
+@media (min-width: 768px) {
+
+    .coverphoto {
+      background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+    }
+  
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+  
+    .hero-text {
+      padding: 1.25rem;
+      border-radius: 4px;
+      width: 50%;
+    }
+  
+    .hero-text h1 {
+      font-size: 7rem;
+    }
+  
+  }
+  
+  @media (min-width: 768px) {
+  
+    .tagline {
+      text-transform: uppercase;
+    }
+  
+  }
+
 /* HEADER */
 
 /* LOCATIONS */
@@ -200,7 +252,7 @@ h1 {
 .location{
     display: inline-block;
     text-align: center;
-    padding: 2% 8% 3% 8%;
+    padding: 1% 8% 3% 8%;
 }
 
 .location div {
@@ -218,23 +270,45 @@ h1 {
 #Location h1{
     font-family: 'Great Vibes';
     font-size: 4rem;
-    padding-top: 1%;
+    padding-top: .5rem
 }
 
 .location img{
     width: 50%;
     text-align: center;
-    padding: 10% 0 10%;
+    padding: 5% 0 5%;
 } 
 
+.location::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+  }
 
+@media (min-width: 768px) {
+
+    .location {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+  
+    .location::after {
+      display: none;
+    }
+  
+  }
 /* Program section */
 
 #Program {
     background-color:hsla(100,0%,0%,.6);
     color: #d2ba87;
     text-align: left;
-    padding: 3rem 30% 2rem 30%;
+    padding: 3rem 30% 1rem 30%;
     line-height: .5rem;
     width: 100%;
     
@@ -250,7 +324,7 @@ h1 {
 #Program p
 { 
     font-style: italic;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 .timetable{
@@ -259,6 +333,22 @@ h1 {
     font-family: 'Muli', sans-serif;
     
 }
+
+@media (min-width: 768px) {
+
+    .program-schedule {
+      width: 30vw;
+      margin: 0 auto;
+      line-height: 2rem;
+    }
+}
+@media (max-width: 768px){
+    #Program p {
+        font-size: 100%;
+        line-height: 2rem;
+    }
+  
+  }
 
 /* Gifts section */
 
@@ -293,6 +383,10 @@ h1 {
     font-family: 'Muli', sans-serif;
     text-align: left;
   }
+
+.faq h3 {
+    text-align: left;
+}
   
 .question-group{
     display: inline-block;
@@ -322,6 +416,26 @@ h1 {
   
 .answer {
     margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
 }
 
 /* Contacts and footer section */
@@ -357,4 +471,12 @@ h1 {
   
   footer small {
     line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+
+    footer {
+      min-height: 7vh;
+    }
+  
   }
